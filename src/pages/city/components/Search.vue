@@ -32,6 +32,7 @@ export default {
     handleCityClick (city) {
       this.changeCity(city)
       this.$router.push('/')
+      this.keyword = ''
     },
     ...mapActions(['changeCity'])
   },

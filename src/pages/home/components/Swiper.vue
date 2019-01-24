@@ -20,13 +20,19 @@ export default {
   props: {
     list: Array
   },
-  data: function () {
+  data () {
     return {
       swiperOption: {
+        //spaceBetween: 30,
+        //centeredSlides: true,
+        effect: 'fade',
+        autoplay: {
+          delay: 500,
+          disableOnInteraction: false
+        },
+        speed: 3000,
         pagination: '.swiper-pagination',
-        loop: true,
-        autoplay: false
-
+        loop: true
       }
     }
   },
